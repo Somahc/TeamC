@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class startbutton : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -21,5 +23,6 @@ public class startbutton : MonoBehaviour
     {
         //ログ出力
         Debug.Log("押したよ！");
+        SceneManager.LoadScene("scene1");
     }
 }

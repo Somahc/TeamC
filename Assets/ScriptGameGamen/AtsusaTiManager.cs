@@ -30,8 +30,8 @@ public class AtsusaTiManager : MonoBehaviour
                 SceneManager.LoadScene("GameOver");
             }else
             {
-                // 暑さ値を1秒ごとに0.01ずつ増やす
-                atsusaTi += Time.deltaTime + 0.02f;
+                // 暑さ値を1秒ごとに15ずつ増やす
+                atsusaTi += Time.deltaTime * 15.0f;
             }
             atsusaTiText.text = $"暑さ値:{atsusaTi.ToString("F2")}";
         }

@@ -870,11 +870,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1395b315-28cb-4096-9afc-5316e705bdc0
+  cloudProjectId: a3a759bc-604c-4e76-94d7-bf0f7e444e4c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: TeamC
-  organizationId: ntkokd
+  projectName: TeamC (1)
+  organizationId: sabaringopie
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

@@ -23,6 +23,6 @@ public class startbutton : MonoBehaviour
     {
         //ログ出力
         Debug.Log("押したよ！");
-        SceneManager.LoadScene("scene1");
+        SceneManager.LoadScene("GameGamen");
     }
 }

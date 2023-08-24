@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AtsusaTiManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class AtsusaTiManager : MonoBehaviour
             {
                 Debug.Log("暑さ値が最大値に達したのでゲームオーバー");
                 isGameOver = true;
+                SceneManager.LoadScene("GameOver");
             }else
             {
                 // 暑さ値を1秒ごとに0.01ずつ増やす

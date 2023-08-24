@@ -31,7 +31,7 @@ public class AtsusaTiManager : MonoBehaviour
             }else
             {
                 // 暑さ値を1秒ごとに0.01ずつ増やす
-                atsusaTi += Time.deltaTime + 0.01f;
+                atsusaTi += Time.deltaTime + 0.02f;
             }
             atsusaTiText.text = $"暑さ値:{atsusaTi.ToString("F2")}";
         }

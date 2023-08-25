@@ -12,6 +12,10 @@ public class AtsusaTiManager : MonoBehaviour
     // 暑さ値の最大値
     [SerializeField] int maxAtsusaTi = 100;
 
+    // アイスをとったら減少する暑さ値
+    [SerializeField] int kaihukuAtsusaTi = 20;
+
+
     // ゲームオーバーしたかのフラグ
     private bool isGameOver = false;
 
@@ -36,6 +40,26 @@ public class AtsusaTiManager : MonoBehaviour
             // 暑さ値をゲージに反映
             atsusaSlider = GameObject.Find("Slider").GetComponent<Slider>();
             atsusaSlider.value = atsusaTi/100;
+        }
+    }
+
+    public float GetAtsusaTi()
+    {
+        return atsusaTi;
+    }
+
+    public void SetAtsusaTi(float atsusaTi)
+    {
+        this.atsusaTi = atsusaTi;
+    }
+
+    public void KaihukuAtsusaTi()
+    {   
+        if(atsusaTi >= kaihukuAtsusaTi){
+            this.atsusaTi -= kaihukuAtsusaTi;
+        }else
+        {
+            this.atsusaTi = 0;
         }
     }
 }

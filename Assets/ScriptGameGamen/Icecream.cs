@@ -7,7 +7,7 @@ public class Icecream : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,8 +22,16 @@ public class Icecream : MonoBehaviour
         {
             Debug.Log("アイス取得");
 
-            // ここに暑さ値を減らす処理を書く
+            // AtsusaTiManagerオブジェクトを探して取得
+            AtsusaTiManager atsusaTiManager = FindObjectOfType<AtsusaTiManager>();
 
+            // アイスの取得で暑さ値を減らす
+            if (atsusaTiManager != null)
+            {
+                atsusaTiManager.KaihukuAtsusaTi();
+            }
+            
+            // アイスを取得したら消す
             Destroy(gameObject);
         }
     }

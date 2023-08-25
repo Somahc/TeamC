@@ -10,7 +10,7 @@ public class Stone : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("石いぶつかったよ！ゲームオーバー！！");
+            Debug.Log("石にぶつかったよ！ゲームオーバー！！");
             SceneManager.LoadScene("GameOver");
         }
     }

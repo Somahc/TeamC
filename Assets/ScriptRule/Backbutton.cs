@@ -17,6 +17,10 @@ public class Backbutton : MonoBehaviour
     {
 
     }
+    public void delay()
+    {
+        Invoke("Click",1f);
+    }
 
     //ボタンを押した時の処理
     public void Click()

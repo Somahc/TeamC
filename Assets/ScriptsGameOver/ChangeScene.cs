@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public void delay()
+    {
+        Invoke("NextScene",1f);
+    }
     public void NextScene()
     {
         //読み込むシーンの名前を指定

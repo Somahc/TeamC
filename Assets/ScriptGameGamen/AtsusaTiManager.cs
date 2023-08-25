@@ -6,15 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class AtsusaTiManager : MonoBehaviour
 {
+    // slider型宣言
+    Slider atsusaSlider;
 
     // 暑さ値の最大値
     [SerializeField] int maxAtsusaTi = 100;
 
     // ゲームオーバーしたかのフラグ
     private bool isGameOver = false;
-
-    // 暑さ値の表示用テキスト
-    [SerializeField] Text atsusaTiText;
 
     // 暑さ値
     private float atsusaTi;
@@ -33,7 +32,10 @@ public class AtsusaTiManager : MonoBehaviour
                 // 暑さ値を1秒ごとに15ずつ増やす
                 atsusaTi += Time.deltaTime * 15.0f;
             }
-            atsusaTiText.text = $"暑さ値:{atsusaTi.ToString("F2")}";
+            
+            // 暑さ値をゲージに反映
+            atsusaSlider = GameObject.Find("Slider").GetComponent<Slider>();
+            atsusaSlider.value = atsusaTi/100;
         }
     }
 }

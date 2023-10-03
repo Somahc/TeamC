@@ -1694,7 +1694,6 @@ GameObject:
   - component: {fileID: 1466000627}
   - component: {fileID: 1466000630}
   - component: {fileID: 1466000631}
-  - component: {fileID: 1466000632}
   - component: {fileID: 1466000633}
   m_Layer: 0
   m_Name: bird
@@ -1831,20 +1830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpP: 300
---- !u!114 &1466000632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466000625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0157a14c922346a0a28711ca82aefd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAtsusaTi: 100
-  kaihukuAtsusaTi: 20
 --- !u!114 &1466000633
 MonoBehaviour:
   m_ObjectHideFlags: 0

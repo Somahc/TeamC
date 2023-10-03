@@ -35,6 +35,7 @@ public class AtsusaTiManager : MonoBehaviour
             {
                 // 暑さ値を1秒ごとに15ずつ増やす
                 atsusaTi += Time.deltaTime * 15.0f;
+                // Debug.Log("暑さ値" + atsusaTi);
             }
             
             // 暑さ値をゲージに反映
@@ -61,5 +62,6 @@ public class AtsusaTiManager : MonoBehaviour
         {
             this.atsusaTi = 0;
         }
+        // Debug.Log("現在の暑さ値" + atsusaTi);
     }
 }

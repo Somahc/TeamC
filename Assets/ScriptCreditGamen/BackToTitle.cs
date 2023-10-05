@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class BackToTitle : MonoBehaviour
 {
     public void onClick(){
+        Invoke("NextScene",1f);
+    }
+    public void NextScene()
+    {
+        //読み込むシーンの名前を指定
         SceneManager.LoadScene("title");
     }
 }

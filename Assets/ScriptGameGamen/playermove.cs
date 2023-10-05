@@ -24,6 +24,11 @@ public class playermove : MonoBehaviour
         {
              // リジッドボディに力を加える（上方向にジャンプ力をかける）
             rbody.AddForce(transform.up * jumpP);
+            PlayerSEManager playerSEManager = FindObjectOfType<PlayerSEManager>();
+            if (playerSEManager != null)
+            {
+                playerSEManager.PlayJump();
+            }
         }
     }
 

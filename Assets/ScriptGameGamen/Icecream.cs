@@ -25,10 +25,17 @@ public class Icecream : MonoBehaviour
             // AtsusaTiManagerオブジェクトを探して取得
             AtsusaTiManager atsusaTiManager = FindObjectOfType<AtsusaTiManager>();
 
+            PlayerSEManager playerSEManager = FindObjectOfType<PlayerSEManager>();
+
             // アイスの取得で暑さ値を減らす
             if (atsusaTiManager != null)
             {
                 atsusaTiManager.KaihukuAtsusaTi();
+            }
+
+            if (playerSEManager != null)
+            {
+                playerSEManager.PlayIce();
             }
             
             // アイスを取得したら消す
